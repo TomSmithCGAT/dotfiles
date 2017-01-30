@@ -1,0 +1,7 @@
+channels:
+  - cgat
+  - toms
+  - bioconda
+  - r
+  - defaults
+  - conda-forge
