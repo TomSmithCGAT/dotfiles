@@ -2,8 +2,8 @@ alias h='history'
 
 alias less='less -XF'
 
-alias cgat='cd ~/git_repos/cgat'
-alias pipelines='cd ~/git_repos/CGATPipelines'
+alias dev='cd ~/git_repos/cgat'
+alias pipe='cd ~/git_repos/CGATPipelines'
 alias umi='cd ~/UMI-tools'
 
 # think wizard of Oz...

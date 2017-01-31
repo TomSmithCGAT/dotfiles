@@ -116,4 +116,7 @@ export PATH="/home/FILESERVER5/proteomics/tss38/anaconda3/bin:$PATH"
 export TMPDIR='/scratch'
 export SHARED_TMPDIR='/scratch'
 
+# add the apps path
+export PATH="/home/FILESERVER5/proteomics/tss38/apps/src/picard-2.8.2:$PATH"
+
 
