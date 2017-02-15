@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=100000
+HISTFILESIZE=200000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -113,10 +113,24 @@ export PATH="/home/FILESERVER5/proteomics/tss38/anaconda3/bin:$PATH"
 
 
 # Variables for CGATPipelines
-export TMPDIR='/scratch'
-export SHARED_TMPDIR='/scratch'
+export TMPDIR='/home/FILESERVER5/proteomics/tss38/scratch'
+export SHARED_TMPDIR='/home/FILESERVER5/proteomics/tss38/scratch'
 
-# add the apps path
-export PATH="/home/FILESERVER5/proteomics/tss38/apps/src/picard-2.8.2:$PATH"
+
+# make crontab -e open in emacs
+export EDITOR="emacs -nw"
+
+
+########### Really should use modulefiles to add these to path
+## - this is unsustainable
+
+# add picard to the apps path
+export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/picard-2.8.2:$PATH"
+
+# add java to the apps path
+export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/jre1.8.0_121/bin/:$PATH"
+
+# add sratoolkit to the apps path
+export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/sratoolkit.2.8.1/bin/:$PATH"
 
 

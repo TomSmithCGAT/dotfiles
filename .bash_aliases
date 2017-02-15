@@ -11,5 +11,9 @@ alias heels='echo -e "\n\nClicking heels...\n\n"; ssh -X toms@cgatui.imm.ox.ac.u
 
 alias la='ls -A'
 alias l='ls -CF'
-alias lk='ls -k'
+alias lk='ls -kSr'
 alias lt='ls -tr'
+
+alias www='echo -e "\nWHAT WENT WRONG?..\n"; tail -20 pipeline.log'
+
+alias hm='du -sh'
