@@ -107,9 +107,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-# added by Anaconda3 4.2.0 installer
-export PATH="/home/FILESERVER5/proteomics/tss38/anaconda3/bin:$PATH"
+mdcd() {
+    mkdir "$@" && cd "$@"
+}
 
 
 # Variables for CGATPipelines
@@ -133,4 +133,32 @@ export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/jre1.8.0_121/bin/:$PATH
 # add sratoolkit to the apps path
 export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/sratoolkit.2.8.1/bin/:$PATH"
 
+# add igv to the apps path
+export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/IGV_2.3.91/:$PATH"
 
+# add clustalo to the path
+export PATH="/home/FILESERVER5/proteomics/tss38/apps/bio/:$PATH"
+
+# add featureCounts to the path
+export PATH="~/apps/bio/subread-1.5.2-Linux-x86_64/bin/:$PATH"
+
+# add CamProt to the python path
+# remove this when setup.py develop in place and working
+export PYTHONPATH="/home/FILESERVER5/proteomics/tss38/git_repos/CamProt/camprot:$PYTHONPATH"
+
+
+# add open MS to LD library path:
+#http://ftp.mi.fu-berlin.de/pub/OpenMS/release-documentation/html/install_linux.html
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/FILESERVER5/proteomics/tss38/git_repos/OpenMS-build/lib
+export PATH=$PATH:/home/FILESERVER5/proteomics/tss38/git_repos/OpenMS-build/bin
+
+
+# added by Anaconda3 4.3.1 installer
+#export PATH="/home/FILESERVER5/proteomics/tss38/anaconda3/bin:$PATH"
+
+# add alevin salmon
+#export PATH="/home/FILESERVER5/proteomics/tss38/git_repos/alevin/bin/salmon/bin#:$PATH"
+#export PATH="/home/FILESERVER5/proteomics/tss38/git_repos/alevin/bin/salmon/lib#:$PATH"
+
+
+source /home/FILESERVER5/proteomics/tss38/devel/py36-v1/conda-install/bin/activate py36-v1

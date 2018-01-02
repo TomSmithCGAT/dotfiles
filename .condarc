@@ -1,7 +1,7 @@
 channels:
+  - conda-forge
   - cgat
   - toms
   - bioconda
   - r
   - defaults
-  - conda-forge
