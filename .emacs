@@ -337,7 +337,7 @@ Null prefix argument turns off the mode."
 ;; Put autosave files (ie #foo#) in one place, *not*
 ;; scattered all over the file system!
 (defvar autosave-dir
- (concat "/home/FILESERVER5/proteomics/" (user-login-name) "/.emacs_autosaves/" (user-login-name) "/" ))
+ (concat "/home/PROT-FILESVR1/proteomics/" (user-login-name) "/.emacs_autosaves/" (user-login-name) "/" ))
 
 (make-directory autosave-dir t)
 
@@ -355,7 +355,7 @@ Null prefix argument turns off the mode."
 ;; Put backup files (ie foo~) in one place too. (The backup-directory-alist
 ;; list contains regexp=>directory mappings; filenames matching a regexp are
 ;; backed up in the corresponding directory. Emacs will mkdir it if necessary.)
-(defvar backup-dir (concat "/home/FILESERVER5/proteomics/" (user-login-name) "/.emacs_backups/" (user-login-name) "/"))
+(defvar backup-dir (concat "/home/PROT-FILESVR1/proteomics/" (user-login-name) "/.emacs_backups/" (user-login-name) "/"))
 (setq backup-directory-alist (list (cons "." backup-dir)))
 
 ;;---------------------------------------------------
@@ -399,7 +399,7 @@ Null prefix argument turns off the mode."
 ;           (local-file (file-relative-name
 ;                        temp-file
 ;                        (file-name-directory buffer-file-name))))
-;      (list "/home/FILESERVER5/proteomics/tss38/.emacs.d/pyflakespep8.py" (list local-file))))
+;      (list "/home/PROT-FILESVR1/proteomics/tss38/.emacs.d/pyflakespep8.py" (list local-file))))
 ;  (add-to-list 'flymake-allowed-file-name-masks
 ;               '("\\.py\\'" flymake-pychecker-init)))
 
