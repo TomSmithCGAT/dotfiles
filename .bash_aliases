@@ -17,3 +17,7 @@ alias lt='ls -tr'
 alias www='echo -e "\nWHAT WENT WRONG?..\n"; tail -20 pipeline.log'
 
 alias hm='du -sh'
+
+alias cleanout='rm -rf ctmp* pipeline.log nohup.out'
+
+alias setup='mkdir raw; mkdir shared_files; mkdir notebooks; mkdir results; mkdir results/plots'
